@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasmEdge LFX Mentorship Pre-test</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px;">
+
+<h1>WasmEdge LFX Mentorship Pre-test</h1>
+
+<p>This is a WasmEdge LFX mentorship pre-test for <a href="https://github.com/WasmEdge/WasmEdge/issues/4513">Extend sub-command of WasmEdge CLI tool</a> (<a href="https://github.com/WasmEdge/WasmEdge/issues/4513">https://github.com/WasmEdge/WasmEdge/issues/4513</a>)</p>
+
+<h2>Submission Requirements</h2>
+
+<p>Mentee will submit two materials on the mentorship system:</p>
+<ol>
+    <li>RESUME</li>
+    <li>COVER LETTER</li>
+</ol>
+
+<h2>Cover Letter Format</h2>
+
+<p>The COVER LETTER should follow the given format listed below:</p>
+
+<hr>
+
+<h3>The Original Cover Letter</h3>
+
+<p>No format limit, you can put anything you want</p>
+
+<h3>Check List</h3>
+
+<ul>
+    <li><input type="checkbox" disabled> I have read the <a href="https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md">WasmEdge Mentorship Program Policy</a> (<a href="https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md">https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md</a>)</li>
+</ul>
+
+<h3>Pre-test 1</h3>
+
+<p>Please show the answer about the following code snippet:</p>
+
+<pre style="background: #f4f4f4; padding: 15px; border-radius: 5px; font-family: Consolas, Monaco, 'Andale Mono', monospace; color: #333; line-height: 1.5;">
+<span style="color: #0000cd; font-weight: bold;">def</span> collectNums(lists, threshold):
+    result = <span style="color: #d91e18;">0</span>
+    <span style="color: #0000cd; font-weight: bold;">for</span> x <span style="color: #0000cd; font-weight: bold;">in</span> lists:
+        <span style="color: #0000cd; font-weight: bold;">if</span> x &gt;<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">=</span> threshold:
+            threshold = x
+            result += <span style="color: #d91e18;">2</span> *<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">*</span> x
+    <span style="color: #0000cd; font-weight: bold;">return</span> result
+
+<span style="color: #0000cd; font-weight: bold;">print</span>(collectNums([<span style="color: #d91e18;">1</span>, <span style="color: #d91e18;">3</span>, <span style="color: #d91e18;">4</span>, <span style="color: #d91e18;">2</span>, <span style="color: #d91e18;">4</span>, <span style="color: #d91e18;">7</span>], <span style="color: #d91e18;">3</span>))
+</pre>
+
+<h3>Pre-test 2</h3>
+
+<p>To proof you have the basic understand about the C/C++ skills and WasmEdge C API:</p>
+<ol>
+    <li>Refer to the <a href="https://github.com/WasmEdge/WasmEdge/blob/master/examples/wasm/README.md#calculate-fibonacci-number">Fibonacci example in WASM</a>.</li>
+    <li>Instead of running it by WasmEdge CLI, please write the C/C++ code of using WasmEdge C API to <span style="color: #d91e18;">trigger the CLI tool</span> to run the WASM.</li>
+    <li>Both the screenshot image of the execution result and the soure code (.cpp format) should be attached here.</li>
+</ol>
+
+<h3>Your Proposal</h3>
+
+<p>We would like to know what's your planing to finish this mentorship inside the mentorship timeline. You should disclosure if there is a event (such as mid-term or final exam) and the progress may be less than other week.</p>
+
+<hr>
+
+</body>
+</html>
