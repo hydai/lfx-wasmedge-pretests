@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasmEdge LFX Mentorship Pre-test</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px;">
+
+<h1>WasmEdge LFX Mentorship Pre-test</h1>
+
+<p>This is a WasmEdge LFX mentorship pre-test for <a href="https://github.com/WasmEdge/WasmEdge/issues/5153">Support for the Wide Arithmetic Proposal</a> (<a href="https://github.com/WasmEdge/WasmEdge/issues/5153">https://github.com/WasmEdge/WasmEdge/issues/5153</a>)</p>
+
+<h2>Submission Requirements</h2>
+
+<p>Mentees must submit these materials via the mentorship system.</p>
+
+<h2>Pre-Test Format</h2>
+
+<p>The pre-test should follow the format listed below:</p>
+
+<hr>
+
+<h3>Basic Information</h3>
+
+<p>Full Name, e-mail, GitHub handle</p>
+
+<h3>Check List</h3>
+
+<ul>
+    <li><input type="checkbox" disabled> I have read the <a href="https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md">WasmEdge Mentorship Program Policy</a> (<a href="https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md">https://github.com/WasmEdge/WasmEdge/blob/master/docs/mentorship-policy.md</a>)</li>
+    <li><input type="checkbox" disabled> I have read the <a href="https://docs.linuxfoundation.org/lfx/mentorship/standards-of-excellence">LFX Mentorship Standards of Excellence</a> (<a href="https://docs.linuxfoundation.org/lfx/mentorship/standards-of-excellence">https://docs.linuxfoundation.org/lfx/mentorship/standards-of-excellence</a>)</li>
+</ul>
+
+<h3>Pre-test</h3>
+
+<h4>Pre-test 1</h4>
+
+<p>Please show the output of the following code snippet:</p>
+
+<pre style="background: #f4f4f4; padding: 15px; border-radius: 5px; font-family: Consolas, Monaco, 'Andale Mono', monospace; color: #333; line-height: 1.5;">
+<span style="color: #0000cd; font-weight: bold;">def</span> filterSum(nums, limit):
+    total = <span style="color: #d91e18;">0</span>
+    <span style="color: #0000cd; font-weight: bold;">for</span> n <span style="color: #0000cd; font-weight: bold;">in</span> nums:
+        <span style="color: #0000cd; font-weight: bold;">if</span> n &lt;<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">=</span> limit:
+            total += n *<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">*</span> <span style="color: #d91e18;">3</span>
+        <span style="color: #0000cd; font-weight: bold;">else</span>:
+            limit += <span style="color: #d91e18;">1</span>
+    <span style="color: #0000cd; font-weight: bold;">return</span> total
+
+<span style="color: #0000cd; font-weight: bold;">print</span>(filterSum([<span style="color: #d91e18;">4</span>, <span style="color: #d91e18;">1</span>, <span style="color: #d91e18;">6</span>, <span style="color: #d91e18;">2</span>, <span style="color: #d91e18;">8</span>, <span style="color: #d91e18;">3</span>], <span style="color: #d91e18;">5</span>))
+</pre>
+
+<h4>Pre-test 2</h4>
+
+<p>To prove you have a basic understanding of executing the WebAssembly binary format and the WasmEdge runtime:</p>
+
+<ol>
+    <li>Build WasmEdge from source using the latest <a href="https://github.com/WasmEdge/WasmEdge/tree/master"><code>master</code> branch</a>.</li>
+    <li>Create a WASM file that contains SIMD instructions.</li>
+    <li>Modify the WasmEdge execution engine to print extra information about the SIMD instructions when executing the above WASM file.</li>
+    <li>Provide the patch files of your modification.</li>
+    <li>Provide the WASM file you created in WAT format.</li>
+    <li>Provide the output produced by your modified WasmEdge.</li>
+</ol>
+
+<p>Don't submit your modified code to the WasmEdge repository.</p>
+
+<p>Don't invite the mentors to your private repository. Please submit the patch files and the WASM file in this pre-test report.</p>
+
+<hr>
+
+<h4>Pre-test 3</h4>
+
+<p>To prove you have a basic understanding of using the LLVM framework:</p>
+
+<ol>
+    <li>Create a simple program that uses the LLVM API to create two i128 integers (a, b), read the inputs, and calculate the result of a + b.</li>
+    <li>Provide the patch files of your implementation.</li>
+    <li>Provide the output produced by your program.</li>
+</ol>
+
+<p>Don't submit your modified code to the WasmEdge repository.</p>
+
+<p>Don't invite the mentors to your private repository. Please submit the patch files in this pre-test report.</p>
+
+<hr>
+
+<h3>Your Proposal</h3>
+
+<p>We would like to know your plan for finishing this mentorship within the mentorship timeline. You should disclose if there is an event (such as a mid-term or final exam) during which your progress may be less than in other weeks.</p>
+
+<hr>
+
+</body>
+</html>
