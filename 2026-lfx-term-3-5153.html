@@ -36,19 +36,28 @@
 
 <h4>Pre-test 1</h4>
 
-<p>Please show the output of the following code snippet:</p>
+<p>Please show the output of the following C++ code snippet:</p>
 
 <pre style="background: #f4f4f4; padding: 15px; border-radius: 5px; font-family: Consolas, Monaco, 'Andale Mono', monospace; color: #333; line-height: 1.5;">
-<span style="color: #0000cd; font-weight: bold;">def</span> filterSum(nums, limit):
-    total = <span style="color: #d91e18;">0</span>
-    <span style="color: #0000cd; font-weight: bold;">for</span> n <span style="color: #0000cd; font-weight: bold;">in</span> nums:
-        <span style="color: #0000cd; font-weight: bold;">if</span> n &lt;<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">=</span> limit:
-            total += n *<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">*</span> <span style="color: #d91e18;">3</span>
-        <span style="color: #0000cd; font-weight: bold;">else</span>:
-            limit += <span style="color: #d91e18;">1</span>
-    <span style="color: #0000cd; font-weight: bold;">return</span> total
+<span style="color: #008000;">#include</span> &lt;iostream&gt;
+<span style="color: #008000;">#include</span> &lt;vector&gt;
 
-<span style="color: #0000cd; font-weight: bold;">print</span>(filterSum([<span style="color: #d91e18;">4</span>, <span style="color: #d91e18;">1</span>, <span style="color: #d91e18;">6</span>, <span style="color: #d91e18;">2</span>, <span style="color: #d91e18;">8</span>, <span style="color: #d91e18;">3</span>], <span style="color: #d91e18;">5</span>))
+<span style="color: #0000cd; font-weight: bold;">int</span> filterSum(<span style="color: #0000cd; font-weight: bold;">const</span> std::vector&lt;<span style="color: #0000cd; font-weight: bold;">int</span>&gt;&amp; nums, <span style="color: #0000cd; font-weight: bold;">int</span> limit) {
+    <span style="color: #0000cd; font-weight: bold;">int</span> total = <span style="color: #d91e18;">0</span>;
+    <span style="color: #0000cd; font-weight: bold;">for</span> (<span style="color: #0000cd; font-weight: bold;">int</span> n : nums) {
+        <span style="color: #0000cd; font-weight: bold;">if</span> (n &lt;<span aria-hidden="true" style="font-size: 0px; opacity: 0; user-select: text;">=</span> limit) {
+            total += n * <span style="color: #d91e18;">3</span>;
+        } <span style="color: #0000cd; font-weight: bold;">else</span> {
+            limit += <span style="color: #d91e18;">1</span>;
+        }
+    }
+    <span style="color: #0000cd; font-weight: bold;">return</span> total;
+}
+
+<span style="color: #0000cd; font-weight: bold;">int</span> main() {
+    std::cout &lt;&lt; filterSum({<span style="color: #d91e18;">4</span>, <span style="color: #d91e18;">1</span>, <span style="color: #d91e18;">5</span>, <span style="color: #d91e18;">6</span>, <span style="color: #d91e18;">2</span>, <span style="color: #d91e18;">8</span>, <span style="color: #d91e18;">3</span>}, <span style="color: #d91e18;">5</span>) &lt;&lt; <span style="color: #a31515;">'\n'</span>;
+    <span style="color: #0000cd; font-weight: bold;">return</span> <span style="color: #d91e18;">0</span>;
+}
 </pre>
 
 <h4>Pre-test 2</h4>
